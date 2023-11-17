@@ -1,14 +1,13 @@
-import { Octicon, Header, Avatar } from "@primer/react"
-import '../../public/Searchbar.css'
-import {VideoIcon}from '@primer/octicons-react'
+import { Octicon, Header, Avatar } from "@primer/react";
+import { VideoIcon } from '@primer/octicons-react';
+import '../../public/Searchbar.css';
 
-const Navbar = props => {
-
+const Navbar = (props) => {
     return (
         <Header className="nav" sx={{ backgroundColor: 'white', color: 'black', position: 'sticky', top: 0, zIndex: 100 }}>
             <Header.Item>
                 <Header.Link href="#" fontSize={2} sx={{ color: 'black' }}>
-                    <VideoIcon size={24} /> &nbsp; &nbsp;
+                    <VideoIcon size={24} sx={{ color: 'red' }} /> &nbsp; &nbsp;
                     <span>Youtube</span>
                 </Header.Link>
             </Header.Item>
