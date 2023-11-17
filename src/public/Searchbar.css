@@ -1,0 +1,42 @@
+
+
+.search{
+    position:fixed;
+    width: 40%;
+    top: 13px;
+    height: 35px;
+    margin-left: 35%;
+    border-radius: 10px;
+}
+
+.navbar{
+    background-color:#f5f4f1 ;
+}
+
+
+
+
+
+/* Searchbar.css */
+
+.sidebar {
+    width: 20%;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding-top: 20px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .octicon {
+    color: #0366d6;
+    /* Adjust the color as needed */
+}
+
+.sidebar .Avatar {
+    margin-right: 8px;
+}
+
+
