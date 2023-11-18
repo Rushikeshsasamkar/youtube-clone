@@ -40,3 +40,37 @@
 }
 
 
+
+
+
+/* Normal styles for larger screens */
+.sidebar {
+    width: 240px;
+    /* Set your desired initial width */
+    transition: width 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 40%;
+        /* Adjust the width for smaller screens */
+    }
+}
+
+/* Button to toggle the sidebar */
+.toggle-button {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+}
+
+/* Adjust button styles based on your design */
+
+.sidebar.closed {
+    width: 0;
+    overflow: hidden;
+}

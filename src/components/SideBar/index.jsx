@@ -1,11 +1,20 @@
-import { LinkIcon,DiffAddedIcon,FlameIcon,FeedIssueClosedIcon, AlertIcon, VideoIcon, HomeIcon,ThumbsupIcon,DeviceCameraVideoIcon,HistoryIcon, ClockIcon, DeviceCameraIcon } from '@primer/octicons-react'
-import {ActionList, Avatar } from '@primer/react'
-import '../../public/Searchbar.css'
+import React, { useState } from 'react';
+import { LinkIcon, DiffAddedIcon, FlameIcon, FeedIssueClosedIcon, AlertIcon, VideoIcon, HomeIcon, ThumbsupIcon, DeviceCameraVideoIcon, HistoryIcon, ClockIcon, DeviceCameraIcon } from '@primer/octicons-react';
+import { ActionList, Avatar } from '@primer/react';
+import '../../public/Searchbar.css';
 
-const SideBar = props =>  {
+const SideBar = (props) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
-    return( 
+  return (
+    <div className={`sidebar ${isSidebarOpen ? '' : 'closed'}`}>
+      <button className="toggle-button" onClick={toggleSidebar}>
+        Toggle Sidebar
+      </button>
     <ActionList className='sidebar' >
     <ActionList.Item >
       <ActionList.LeadingVisual>
@@ -94,6 +103,7 @@ const SideBar = props =>  {
 
 
   </ActionList>
+  </div>
 
     );
 }
